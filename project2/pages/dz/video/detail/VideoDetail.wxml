@@ -1,0 +1,5 @@
+
+<view class='root'></view>
+<view>
+  <video autoplay='true' loop='true' class='video-style-detail' src='{{url}}' bindtap='vdTap' ></video>
+</view>

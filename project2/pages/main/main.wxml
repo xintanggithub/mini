@@ -1,0 +1,16 @@
+<!--pages/main/main.wxml-->
+<view>
+  <view>
+      <swiper>
+        <swiper-item>
+          <image src="cloud://project1-3962c0.7072-project1-3962c0/dianche.png"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="cloud://project1-3962c0.7072-project1-3962c0/hundong.png"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="cloud://project1-3962c0.7072-project1-3962c0/youche.png"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

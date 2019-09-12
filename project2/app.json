@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/dz/video/DZVideo",
+    "pages/main/main",
+    "pages/dz/video/detail/VideoDetail",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00CACA",
+    "navigationBarTitleText": "一个小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#00CACA",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "asstes/img/video-icon-fill.png",
+        "iconPath": "asstes/img/video_icon.png",
+        "pagePath": "pages/dz/video/DZVideo",
+        "text": "段子"
+      },
+      {
+        "selectedIconPath": "asstes/img/fire-fill.png",
+        "iconPath": "asstes/img/fire.png",
+        "pagePath": "pages/test/test",
+        "text": "1111"
+      },
+      {
+        "selectedIconPath": "asstes/img/ic_home_page_customer_select.png",
+        "iconPath": "asstes/img/ic_home_page_customer.png",
+        "pagePath": "pages/test/test",
+        "text": "1111"
+      }
+    ]
+  }
+}

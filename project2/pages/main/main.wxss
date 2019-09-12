@@ -1,0 +1,9 @@
+/* pages/main/main.wxss */
+.title-style {
+  font-size: 16px;
+}
+
+.view-bg {
+  background: #b1f4f3;
+  padding: 10px;
+}
