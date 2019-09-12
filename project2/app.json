@@ -3,7 +3,8 @@
     "pages/dz/video/DZVideo",
     "pages/main/main",
     "pages/dz/video/detail/VideoDetail",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/dz/video/dt/dzdt"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,7 +27,7 @@
         "selectedIconPath": "asstes/img/fire-fill.png",
         "iconPath": "asstes/img/fire.png",
         "pagePath": "pages/test/test",
-        "text": "1111"
+        "text": "新闻"
       },
       {
         "selectedIconPath": "asstes/img/ic_home_page_customer_select.png",

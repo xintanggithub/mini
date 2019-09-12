@@ -1,15 +1,5 @@
-<!-- bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"   bindtap='closePlay'  -->
-<!-- <view class="{{showPlay?'top-play':'top-play-hide'}}" catchtouchmove='move'>
-  <video autoplay='true' loop='true' class='video-style' src='{{currentData.video}}' bindtap='vdTap' ></video>
-</view>
-<view class="{{showPlay?'close-icon':'close-icon-hide'}}" bindtap='cancel'>
-<cover-image class='cancel-icon-style' src='/asstes/img/ic_close.png'></cover-image>
-</view> -->
- <scroll-view>
-
- 
-    <block wx:for="{{response}}" wx:key="key" wx:for-index='index'>
-      <view class='vd-root' >
+<scroll-view>
+<view class='vd-root' >
         <view class='vd-title-root'>
           <image class='vd-icon-radius' src='{{item.header}}'></image>
           <text class='vd-title-style'>{{item.name}}</text>
@@ -36,7 +26,7 @@
             <text class='bottom-time-text'>{{item.passtime}}</text>
           </view>
           <view class='bottom-second-style'>
-            <button open-type='share' class='bottom-second-style3' data-index='{{index}}'>
+            <button bindtap='openDT' class='bottom-second-style3'>
               <!-- 分享 todo-->
               <image class='bottom-time-icon' src='/asstes/img/share.png'></image>
               <text class='bottom-time-text'>{{item.forward}}</text>
@@ -68,12 +58,4 @@
         </view>
         <view class='line'></view>
       </view>
-    </block>
-    <view class='loadmore_show'>
-     <text class='loadText'>加载中...</text>
-    </view>
-  </scroll-view>
-
-<view class="goTop" bindtap='goTop'>
-   <text class='round-text'>顶部</text>
-</view>
+</scroll-view>

@@ -81,8 +81,25 @@ Page({
   /** 
    * 用户点击右上角分享 
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (data) {
+    if (data.from === 'button') {
+      var index = data.target.dataset['index']
+      var itemData=this.data.response[index]
+      var imageurl=""
+      if (itemData.type == 'video') {
+        imageurl=itemData.thumbnail
+      } else {
+        itemData=itemData.image
+      }
+      return {
+        title: itemData.text,
+        path: 'pages/dz/video/dt/dzdt?sid=' + itemData.sid,
+        imageUrl: imageurl,
+        success: function (res) {
+          console.log('分享成功', res)
+        }
+      }
+    }
   },
   getVideoList(refresh) {
     loadState: true
@@ -206,5 +223,12 @@ Page({
       [images]: '/asstes/img/ic_error_rotation.png',
       [thumbnail]: '/asstes/img/ic_error_rotation.png'
     })
+  }, openDT: function (e) {
+    // var sid = e.currentTarget.dataset['index']
+    // console.log('========> open dz dt , sid = ' + sid)
+    // wx.navigateTo({
+    //   url: 'dt/dzdt?sid=' + sid,
+    // })
+
   }
 })
